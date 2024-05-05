@@ -16,9 +16,8 @@ window.onload = () => {
 }
 
 function addData(data){
-    console.log(data);
     var project;
-    for (var i = 0; i < data.length; i++){
+    for (var i = data.length-1; i >= 0; i--){
         project = data[i];
         preview = "";
         if(project["preview"] != null){
