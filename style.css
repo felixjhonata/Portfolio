@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+html{
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color: #DFD0B8;
+}
+
+.primary-color{
+    color: #153448;
+}
+
+.secondary-color{
+    color: #3C5B6F;
+}
+
+.tertiary-color{
+    color: #948979;
+}
+
+.quarternary-color{
+    color: #DFD0B8;
+}
+
+.quinary-color{
+    color: #AE833D;
+}
+
+.offset-anchor{
+    padding-top: 80px;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 70px;
+}
+
+header{
+    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    height: 500px;
+}
+
+#asset-1{
+    position: absolute;
+    top: 400px;
+    left: -200px;
+}
+
+#asset-2{
+    position: absolute;
+    top: 150px;
+    right: -200px;
+}
+
+#role{
+    text-align: center;
+    font-weight: bold;
+    font-size: 70px;
+
+    margin-bottom: 180px;
+}
+
+#down-arrow{
+    width: 70px;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.title{
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+
+.project-thumbnail{
+    height: 250px;
+    width: fit-content;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: 0 0;
+    border-radius: 30px;
+    border: 10px solid #153448;
+}
+
+.project{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    padding-bottom: 50px;
+}
+
+.project-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.project-title{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.project-description{
+    margin-top: 10px;
+    width: 50vw;
+    text-align: justify;
+}
+
+.source-code-button{
+    background-color: #153448;
+    text-decoration: none;
+    padding: 25px 30px;
+    border-radius: 30px;
+}
+
+.preview{
+    text-decoration: underline;
+    margin-right: 20px;
+}
+
+.align-end{
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    align-items: center;
+}
+
+footer{
+    background-color: #948979;
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 760px){
+    nav{
+        margin: 30px 40px;
+    }
+
+    #fj-logo{
+        width: 40px;
+    }
+
+    #github-logo{
+        width: 30px;
+        margin-right: 8px;
+    }
+
+    #asset-1{
+        visibility: hidden;
+    }
+
+    #asset-2{
+        top: 4cm;
+        left: 0px;
+        width: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+        z-index: -1;
+    }
+    
+    header{
+        margin-top: 4.2cm;
+        height: 350px;
+    }
+
+    #name{
+        color: #DFD0B8;
+        font-size: 3.5mm;
+    }
+
+    #role{
+        font-size: 8mm;
+        margin-bottom: 4.5cm;
+    }
+
+    #down-arrow{
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .title{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    #projects{
+        margin-bottom: 0;
+    }
+
+    .project{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-thumbnail{
+        height: 180px;
+        border-radius: 3vw;
+    }
+
+    .project-detail{
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .project-title{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .project-description{
+        font-size: 15px;
+        width: 75vw;
+    }
+
+    .align-end{
+        justify-content: center;
+    }
+
+    .source-code-button{
+        padding: 20px 30px;
+        border-radius: 20px;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+}

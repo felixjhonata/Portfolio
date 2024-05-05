@@ -1,0 +1,11 @@
+{
+    "projects" : [
+        {
+            "thumbnail" : "./Assets/project-thumbnails/pedro-counter.png",
+            "title" : "Pedro Counter",
+            "description" : "An app that counts how many times the Pedro song was played. It uses firebase realtime database service to centralize the amount of times the Pedro song was played.",
+            "source-code" : "https://github.com/felixjhonata/Pedro-Counter",
+            "preview" : "https://felixjhonata.github.io/Pedro-Counter/"
+        }
+    ]
+}
