@@ -13,6 +13,13 @@
             "description" : "An app that gives random math questions and allows the user to answer from the multiple choice given. The point is also keep tracked based on the user's correct answers.",
             "source-code" : "https://github.com/felixjhonata/Quiz-Game",
             "preview" : "https://felixjhonata.github.io/Quiz-Game/"
+        },
+        {
+            "thumbnail" : "./Assets/project-thumbnails/calculator.png",
+            "title" : "Calculator",
+            "description" : "A web app that allows user to calculate simple mathematical equation. It also allows user to toggle between dark and light mode.",
+            "source-code" : "https://github.com/felixjhonata/Calculator",
+            "preview" : "https://felixjhonata.github.io/Calculator/"
         }
     ]
 }
