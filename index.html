@@ -1,38 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./Assets/vectors/fj-logo.svg" type="image/x-icon">
-
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-
-    <title>FJ's Portfolio</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="asset/favicon.ico" type="image/x-icon">
+    
+    <title>Felix Jhonata | Portfolio</title>
+  </head>
+  <body>
     <nav>
-        <img src="./Assets/vectors/fj-logo.svg" alt="FJ Logo" id="fj-logo">
-        <a href="https://github.com/felixjhonata" target="_blank"><img src="./Assets/vectors/github-mark.svg" alt="Github Logo" id="github-logo"></a>
-    </nav>
-
-    <header>
-        <img id="asset-1" src="./Assets/vectors/circle-asset.svg" alt="circle-asset">
-        <img id="asset-2" src="./Assets/vectors/circle-asset.svg" alt="circle-asset">
-
-        <div class="quinary-color" id="name">Hello, my name is <span class="secondary-color">Felix Jhonata</span></div>
-        <div id="role" class="primary-color">Undergraduate<br>Student</div>
-        <a href="#projects"><img id="down-arrow" src="./Assets/vectors/arrow-asset.svg" alt="down-arrow"></a>
-    </header>
-
-    <article id="projects" class="offset-anchor">
-        <div class="primary-color title">PROJECTS</div>
-        
+      <div class="nav_content">
+        <div class="logo">
+          <img src="asset/favicon.ico" alt="Logo">
+          <a href="#">Felix J</a>
         </div>
-    </article>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="#home" onclick="closeMenu()">Home</a></li>
+          <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="home">
+      <div class="home_container">
+        <div class="content">
+          <p class="subtitle">HELLO</p>
+          <h1 class="title">
+            I'm <span>Felix Jhonata<br/>a</span> Mobile & Frontend Developer
+          </h1>
+          <p class="description">
+            Welcome to my developer portfolio! I'm Felix, a motivated student with 
+            a passion for software development. While I'm still honing my skills, 
+            I'm eager to learn and create innovative solutions. I'm excited about the 
+            potential of technology to make a positive impact and am actively seeking 
+            opportunities to grow in this field.
+          </p>
+          <div class="action_btns">
+            <a href="https://github.com/felixjhonata" target="_blank"><img class="social_media_logo" src="asset/github.svg" alt="Github"></a>
+            <a href="https://www.linkedin.com/in/felix-jhonata-97b3492b6/" target="_blank"><img class="social_media_logo" src="asset/linkedin.svg" alt="LinkedIn"></a>
+          </div>
+        </div>
+        <div class="image">
+          <img src="asset/portrait.jpg" alt="profile" />
+        </div>
+      </div>
+    </section>
 
-    <footer class="quarternary-color">
-        THANK YOU FOR READING MY PORTFOLIO :D
+    <section id="projects">
+      <div class="projects_container">
+        <h1 class="title">PROJECTS</h1>
+        <div class="project_cards">
+          <div class="row">
+            <a href="https://github.com/felixjhonata/nextjs-calculator" target="_blank" class="project_card">
+              <img src="asset/calculator_app_thumbnail.png" alt="Project Thumbnail">
+              <h1>See on Github...</h1>
+            </a>
+
+            <a href="https://github.com/felixjhonata/weather_app" target="_blank" class="project_card">
+              <img src="asset/weather_app_thumbnail.png" alt="Project Thumbnail">
+              <h1>See on Github...</h1>
+            </a href="" target="_blank">
+
+            <a href="https://github.com/felixjhonata/cloud_note_app" target="_blank" class="project_card">
+              <img src="asset/notes_app_thumbnail.png" alt="Project Thumbnail">
+              <h1>See on Github...</h1>
+            </a>
+          </div>
+          <div class="row" style="display: none;">
+            <a href="#" target="_blank" class="project_card">
+              <img src="https://via.placeholder.com/1920x1080/eee?text=16:9" alt="Project Thumbnail">
+              <h1>See on Github...</h1>
+            </a>
+            
+            <a href="#" target="_blank" class="project_card">
+              <img src="https://via.placeholder.com/1920x1080/eee?text=16:9" alt="Project Thumbnail">
+              <h1>See on Github...</h1>
+            </a>
+          </div>
+          <p class="more_projects"><a href="https://github.com/felixjhonata?tab=repositories" target="_blank">See more...</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer_container">
+        <div class="personal_info">
+          <img src="asset/favicon.ico" alt="Logo">
+          <p>Felix J</p>
+        </div>
+        <div class="contact_info">
+          <a class="github social_media_link" href="https://github.com/felixjhonata" target="_blank">
+            <img src="asset/github_white.svg" alt="Github Logo">
+          </a>
+          <a class="linkedin social_media_link" href="https://www.linkedin.com/in/felix-jhonata-97b3492b6/" target="_blank">
+            <img src="asset/linkedin_white.png" alt="LinkedIn Logo">
+          </a>
+          <a class="instagram social_media_link" href="https://www.instagram.com/felixjhonata3/" target="_blank">
+            <img src="asset/instagram_white.svg" alt="Instagram Logo">
+          </a>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
+
+  <script>
+    function closeMenu() {
+      let checkBox = document.getElementById("check")
+      checkBox.checked = false
+    }
+  </script>
 </html>
