@@ -97,7 +97,9 @@ header{
     width: fit-content;
     aspect-ratio: 16/9;
     object-fit: cover;
-    object-position: 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 30px;
     border: 10px solid #153448;
 }
