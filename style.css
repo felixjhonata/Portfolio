@@ -212,7 +212,6 @@ ul li a:hover {
 
 #projects .project_card {
   background-color: transparent;
-  border: none;
   cursor: pointer;
   position: relative;
   display: flex;
@@ -244,6 +243,7 @@ ul li a:hover {
   width: 90%;
   border-radius: 10px;
   transition: filter 0.2s ease-in-out;
+  border: solid white 2px;
 }
 
 #projects .project_card:hover img {
